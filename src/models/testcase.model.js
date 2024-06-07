@@ -1,0 +1,16 @@
+import mongoose from "mongoose";
+
+//MQozCjEKMgozCg== input
+
+//I2luY2x1ZGUgPGJpdHMvc3RkYysrLmg+CnVzaW5nIG5hbWVzcGFjZSBzdGQ7CmludCBtYWluKCkKewogICAgaW50IHRlc3RjYXNlPTA7CiAgICBjaW4+PnRlc3RjYXNlOwogICAgZm9yKGludCBpPTA7aTx0ZXN0Y2FzZTtpKyspewogICAgICAgIGludCBsZW49MDsKICAgICAgICB2ZWN0b3I8aW50PnZlYzsKICAgICAgICBjaW4+PmxlbjsKICAgICAgICAKICAgICAgICBmb3IoaW50IGo9MDtqPGxlbjtqKyspeyAKICAgICAgICAgICAgaW50IGlucD0wOwogICAgICAgICAgICBjaW4+PmlucDsKICAgICAgICAgICAgdmVjLnB1c2hfYmFjayhpbnApOwogICAgICAgIH0KICAgICAgICAKICAgICAgICBtYXA8aW50LGludD5tcDsKICAgICAgICBmb3IoaW50IGk9MDsgaTxsZW47aSsrKXsKICAgICAgICAgICAgbXBbdmVjW2ldXSs9MTsKICAgICAgICB9CiAgICAgICAgaW50IGZsYWc9ZmFsc2U7CiAgICAgICAgZm9yKGF1dG8gaXQ6bXApewogICAgICAgICAgICBpZihpdC5zZWNvbmQ+PTIpewogICAgICAgICAgICAgICAgZmxhZz10cnVlOwogICAgICAgICAgICAgICAgYnJlYWs7CiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICAgICAgaWYoZmxhZyl7CiAgICAgICAgICAgIGNvdXQ8PCJ0cnVlIjsKICAgICAgICB9CiAgICAgICAgZWxzZXsKICAgICAgICAgICAgY291dDw8ImZhbHNlIjsKICAgICAgICB9CiAgICB9CgogICAgcmV0dXJuIDA7Cn0=
+const testcaseSchema = new mongoose.Schema({
+
+    input:{
+        type: String
+    },
+    output:{
+        type: String
+    }
+}, {timestamps:true})
+
+export const Testcase = mongoose.model("Testcase", testcaseSchema)
